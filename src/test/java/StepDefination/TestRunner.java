@@ -10,19 +10,18 @@ import io.cucumber.testng.CucumberOptions;
 		features = {"src/test/java/Features"},
 		glue = {"StepDefination"},
 		monochrome=true,
-		plugin = { "pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		plugin = { "pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"rerun:target/failedrerun.txt"}
 		//tags ="@smoke"
 		
 		)
 public class TestRunner extends AbstractTestNGCucumberTests{
 
-	
-	
-	  @Override
-	  
-	  @DataProvider(parallel=true) public Object[][] scenarios() {
+	  @Override	  
+	  @DataProvider(parallel=true) 
+	  public Object[][] scenarios() {
 		  return super.scenarios(); 
-		  }
+	}
 }
 
 

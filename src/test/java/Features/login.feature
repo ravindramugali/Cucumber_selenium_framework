@@ -1,5 +1,5 @@
 
-Feature: facebook login feature
+Feature:login feature
 
 
  @smoke
