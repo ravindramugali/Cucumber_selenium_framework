@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome=true,
 		plugin = { "pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failedrerun.txt"}
-		//tags ="@smoke"
+		//tags ="@functional"
 		
 		)
 public class TestRunner extends AbstractTestNGCucumberTests{
