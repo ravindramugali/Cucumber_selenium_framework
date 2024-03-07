@@ -1,5 +1,5 @@
 
-Feature:login feature
+Feature: login feature
 
 
  @smoke
@@ -11,5 +11,3 @@ Feature:login feature
     Examples:
     |username|
     |ravindramugali@gmail.com|
-    
- 
