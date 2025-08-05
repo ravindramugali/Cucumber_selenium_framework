@@ -2,7 +2,7 @@
 Feature: login feature
 
 
- @smoke
+ @smoke @function
   Scenario Outline: login verify
     Given open url
     When enter "<username>" and password

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.182 s <<< FAILURE! -- in TestSuite
+StepDefination.TestRunner.runScenario["facebook verify", "facebook feature"](2) -- Time elapsed: 3.835 s <<< FAILURE!
+java.lang.NullPointerException
+	at StepDefination.loginDef.open_url(loginDef.java:23)
+	at ✽.open url(file:///C:/RestAssured/workspace/CucumberTestng/src/test/java/Features/facebook.feature:6)
+
+StepDefination.TestRunner.runScenario["login verify", "login feature"](2) -- Time elapsed: 3.838 s <<< FAILURE!
+java.lang.NullPointerException
+	at StepDefination.loginDef.open_url(loginDef.java:23)
+	at ✽.open url(file:///C:/RestAssured/workspace/CucumberTestng/src/test/java/Features/login.feature:7)
+
