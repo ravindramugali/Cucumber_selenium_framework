@@ -1,3 +1,4 @@
 Utils\ConfigReader.class
 Pages\Base_page.class
 Pages\Login_page.class
+Factory\Driverfactory.class

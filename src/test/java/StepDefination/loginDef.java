@@ -44,6 +44,7 @@ public class loginDef {
 	@Then("verify page title")
 	public void verify_page_title() throws InterruptedException {
 	   login.submitbtn();
+	   
 	   Thread.sleep(5000);
 		
 	}

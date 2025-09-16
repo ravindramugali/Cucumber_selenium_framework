@@ -76,7 +76,8 @@
 				 <groupId>org.apache.maven.plugins</groupId>
     			<artifactId>maven-surefire-plugin</artifactId>
     			<version>3.2.5</version>
-				<configuration>
+    			<!-- testNG we can use if we have diff TestRunner files to use-->
+				<!--<configuration>
                     <suiteXmlFiles>
                             <suiteXmlFile>testNG.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -86,7 +87,15 @@
 			            <value>2</value>
 			        </property>
 			   		 </properties>
-                </configuration>
+                </configuration>-->
+                <configuration>
+					<includes>
+						<include>**/TestRunner.java</include>
+					</includes>
+					<parallel>methods</parallel>
+					<threadCount>2</threadCount>
+					<useUnlimitedThreads>false</useUnlimitedThreads>
+				</configuration>
 			</plugin>
 
 		</plugins>

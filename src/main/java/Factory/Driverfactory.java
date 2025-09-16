@@ -27,6 +27,7 @@ public class Driverfactory {
 			
 			WebDriverManager.chromedriver().setup();
 			tldriver.set(new ChromeDriver());
+			
 									 
 		}	
 		return getDriver();
